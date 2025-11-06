@@ -9,17 +9,3 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
 import com.example.navigasiku.ui.theme.NavigasikuTheme
-class MainActivity : ComponentActivity() {
-    @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContent {
-            NavigasikuTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) {
-                    DataApp(modifier = Modifier)
-                }
-            }
-        }
-    }
-}
