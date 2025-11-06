@@ -50,4 +50,10 @@ fun TampilData(
                     .mediumTopAppBarColors(colorResource
                         (id = R.color.teal_700)
                     ))
+        }) { isiRuang ->
+        Column(
+            modifier = Modifier.padding(isiRuang),
+            verticalArrangement = Arrangement.SpaceBetween
+        ) {
+
 
